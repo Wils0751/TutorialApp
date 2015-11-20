@@ -1,1 +1,279 @@
-<!doctype HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tutorial Application</title>
+<!--Loads JQuery Librays-->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+  <link rel="stylesheet" href="themes/tutorial.min.css">
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css">
+ </head>
+<body>
+ <!-- Loads More Library's ---->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- My JavaScripts-->
+  <script src="Js/main.js"></script>
+  <!-- Jquery Mobile -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  
+  
+<!--Home page-->
+  <div id="homepage" data-role="page" data-theme="b">
+    <div data-role="panel" id="homePanel" data-display="overlay" class="ui-responsive-panel">
+      <ul data-role="listview">
+        <li>
+          <a href="#homepage" data-rel="close" class="ui-first-child">
+            Back
+          </a>
+        </li>
+        <li>
+          <a href="#homepage" class="ui-btn ui-state-disabled" data-transition="pop">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#aboutPage" class="ui-btn" data-transition="pop">
+            About
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div data-role="header">
+      <a href="#homePanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
+      <h1>How to saddle a horse</h1>
+    </div>
+    <div data-role="content">
+        <img src="Images/saddle.jpg" alt="saddle" class="masthead">
+        <p>Saddling a horse is one the hardest parts of learning how to ride. So here is a short tutorial on how to Saddle a horse correctly with some pictures! Please Enjoy!</p>
+        <a href="#stepOne" id="startLink" class="ui-btn ">
+           <p> Click here to Begin!</p>
+        </a>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a class="ui-btn ui-state-disabled" href="#homepage" data-transition="pop">Home</a></li>
+          <li><a class="ui-btn" href="#aboutPage" data-transition="pop">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div id="aboutPage" data-role="page" data-theme="b">
+    <div data-role="panel" id="aboutPanel" data-display="overlay">
+      <ul data-role="listview">
+        <li>
+          <a href="#homepage" data-rel="close" class="ui-first-child">Back</a>
+        </li>
+        <li>
+          <a href="#homepage" class="ui-btn" data-transition="pop">Home</a>
+        </li>
+        <li>
+          <a href="#aboutPage" class="ui-btn ui-state-disabled" data-transition="pop">About</a>
+        </li>
+      </ul>
+    </div>
+    
+<!-- About Page-->
+    <div data-role="header">
+      <a href="#aboutPanel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
+      <h1>How to Saddle a Horse</h1>
+    </div>
+    <div data-role="content">
+      <img src="Images/Rohanandi.jpg" alt="me" class="masthead">
+      <p>Hello there! My name is Shannon Wilson and I am a first year Mobile application design and development student!
+     Some of my skills include but not limited to; JavaScript, HTML5, CSS, Photoshop, Illustrator, and the Command Line</p>
+      <p>This is a Tutorial Applicaton for my MAD9014 Class as a project. The tutorial is on how to saddle a horse! </p>
+		<h2> Contact Info</h2>
+   <p> Shannon Wilson </p>
+   <p> 1385 Woodroffe Avenue</p>
+   <p> Algonquin College Residence</p>
+   <p> wils0751@algonquinlive.com</p>
+   <p> 613-827-5292</p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <nav data-role="navbar">
+        <ul>
+          <li><a class="ui-btn" href="#homepage" data-transition="pop">Home</a></li>
+          <li><a class="ui-btn ui-state-disabled"href="#aboutPage" data-transition="pop">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Step 1--->
+  <section id="stepOne" class="step" data-role="page" data-dialog="true"  data-theme="b" data-close-btn="left" data-rel="#homepage">
+    <div data-role="header">
+      <h1> Step 1 of 6</h1>
+    </div>
+    <div data-role="content">
+        <h2> Catching the Horse</h2>
+         <img src="images/fetching.jpeg" alt="Fetching Horse" class="masthead">
+        <p>The first step in succesfully saddling your horse is to catch him first!</p>
+                   <p>Walk out into the field with a treat, halter and lead rope. Catch your horse feed them the treat and walk them back to the barn. </p>
+      </div>
+    <div data-role="footer">
+      <nav data-role="navbar">
+        <ul>
+          <li class="diaPrev">
+            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l ui-state-disabled">
+              Previous
+            </a>
+          </li>
+          <li class="diaNext">
+            <a href="#stepTwo" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r">
+              Next
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+<!--  Step 2 -->
+  <section id="stepTwo" class="step" data-role="page" data-dialog="true"  data-theme="b" data-close-btn="left" data-rel="#homepage">
+    <div data-role="header">
+      <h1>Part 2 of 6</h1>
+    </div>
+    <div data-role="content">
+       <h2> Brushing the Horse</h2>
+        <img src="images/brushing.jpeg" alt="Brushing Horse" class="masthead">
+          <p> Now that you have caught your horse its time to clean them up!</p>
+                  <p> Grab a brush and start brushing! Dont forget to pick their feet and brush their main and tail!</p> 
+      </div>
+    <div data-role="footer">
+      <nav data-role="navbar">
+        <ul>
+          <li class="diaPrev">
+            <a href="#stepOne" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">
+              Previous
+            </a>
+          </li>
+          <li class="diaNext">
+            <a href="#stepThree" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r">
+              Next
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+<!--  Step 3-->
+  
+  <section id="stepThree" class="step" data-role="page" data-dialog="true"  data-theme="b" data-close-btn="left" data-rel="#homepage">
+    <div data-role="header">
+      <h1>Part 3 of 6</h1>
+    </div>
+    <div data-role="content">
+     <h2> Putting on the Saddle Pad </h2>
+        <img src="images/saddlepad.jpg" alt="Saddle Pad" class="masthead">
+          <p> Now that your horse is shiny it time to start the big steps! Go and grab your saddle Pad</p>
+                   <p> Put the saddle pad on the horse so that the velcro keepers are closest to the horses head! Place the pad so it sits evenly on both sides and is sitting about 2 inches from where their mane ends in the middle of their withers!</p>
+      </div>
+    <div data-role="footer">
+      <nav data-role="navbar">
+        <ul>
+          <li class="diaPrev">
+            <a href="#stepTwo" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">
+              Previous
+            </a>
+          </li>
+          <li class="diaNext">
+            <a href="#stepFour" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r">
+              Next
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+<!--  Step 4-->
+  <section id="stepFour" class="step" data-role="page" data-dialog="true"  data-theme="b" data-close-btn="left" data-rel="#homepage">
+    <div data-role="header">
+      <h1>Part 4 of 6</h1>
+    </div>
+    <div data-role="content">
+   		<h3> Putting on the Saddle</h3>
+       <img src="images/saddling.jpeg" alt="Saddling " class="masthead">
+        <p> Now that you have on the saddle pad you are almost their!</p>
+                 <p> Grab the saddle and have it so that the wider part is near the back of the horse and the narrow part is at the front of the horse, place the saddle on top of the saddle pad and reposition it to be about 2 inches back from the front of the saddle pad. </p>
+      </div>
+    <div data-role="footer">
+      <nav data-role="navbar">
+        <ul>
+          <li class="diaPrev">
+            <a href="#stepThree" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">
+              Previous
+            </a>
+          </li>
+          <li class="diaNext">
+            <a href="#stepFive" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r">
+              Next
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+<!--  Step Five-->
+  <section id="stepFive" class="step" data-role="page" data-dialog="true"  data-theme="b" data-close-btn="left" data-rel="#homepage">
+    <div data-role="header">
+      <h1>Part 5 of 6</h1>
+    </div>
+    <div data-role="content">
+       <h2> Attatching the keepers</h2>
+       <img src="images/keepers.png" alt="keepers" class="masthead">       
+        <p> Now to attach the Velcro Keepers onto the saddle!</p>
+                   <p> Open up the Velcro Keepers from one another and attach it to the first billet on the saddle and secure veclro around the billet.</p>
+      </div>
+    <div data-role="footer">
+      <nav data-role="navbar">
+        <ul>
+          <li class="diaPrev">
+            <a href="#stepFour" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">
+              Previous
+            </a>
+          </li>
+          <li class="diaNext">
+            <a href="#stepSix" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r">
+              Next
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+<!-- -->
+  <section id="stepSix" class="step" data-role="page" data-dialog="true"  data-theme="b" data-close-btn="left" data-rel="#homepage">
+    <div data-role="header">
+      <h1>Part 6 of 6 <h1>
+    </div>
+    <div data-role="content">
+       <h2> Doing up the Girth</h2>
+        <img src="images/gith.jpeg" alt="Saddle Pad" class="masthead">
+       <p> Congradulations your on the final step!</p>
+  <p> Now you need go get your girth and do it up! Start doing up the girth always on the right side of the horse! Start with the non elastic side of the girth.</p>
+                  <p> Place the girth on the first hole, then go to the other side do it up and adjust accordinglee. </p>
+                  <p> NOTE: Always check the girth before mounting as horses bloat and the girth may need tightening after walking to the ring!</p>
+                  <p> Enjoy your Ride!</p>
+      </div>
+    <div data-role="footer">
+      <nav data-role="navbar">
+        <ul>
+          <li class="diaPrev">
+            <a href="#stepFive" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">
+              Previous
+            </a>
+          </li>
+          <li class="diaNext">
+            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-arrow-r ui-state-disabled">
+              Next
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+</body>
+</html>
