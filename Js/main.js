@@ -2,30 +2,32 @@ $(document).on('mobileinit', init);
 
 function init()
 {
-  $(document).on('pageshow', '#homepage', handleHome);
-  $(document).on('pageshow', '.step' , handleStep);
+  $(document).on('pageshow', '#homepage', homepage);
+  $(document).on('pageshow', '.step' , Steps);
 }
-
-function handleHome()
+//https://api.jquerymobile.com/pageshow/
+function homepage()
 {
+  if( 'localStorage' in window )
   {
-    var savedPage = window.localStorage.getItem('tutorialPage');
+    var saved = window.localStorage.getItem('tutorialPage');
     {
-      $('a[id="startLink"]').attr('href', savedPage);
-    }
+      $('a[id="startLink"]').attr('href', saved);
+    }///Set close button to start link
   }
 }
 
-function handleStep()
+function Steps()
 {
+  if( 'localStorage' in window )
   {
-    var crntPage = '#' + $(this).attr('id');
-    window.localStorage.setItem('tutorialPage', crntPage);
+    var crrntPage = '#' + $(this).attr('id');
+    window.localStorage.setItem('tutorialPage', crrntPage);
   }
-
+  
   $('a[data-rel="back"]').attr
   ({
     'href': '#homepage',
-    'data-rel': ''
+    'data-rel': ''///Reset close button 
   });
 }
