@@ -11,7 +11,8 @@ function homepage()
   if( 'localStorage' in window )
   {
     var saved = window.localStorage.getItem('tutorialPage');
-    {
+	  if (saved!= null)    
+	  {
       $('a[id="startLink"]').attr('href', saved);
     }///Set close button to start link
   }
