@@ -7,6 +7,7 @@ This project was created by first year first semester mobile application design 
 
 ### Instructions
 __http://wils0751.github.io/TutorialApp/__
+
 1. Go to the link provided
 2. Notice the fixed footer at bottom of page
 3. The user has option to toggle between Home and About page
